@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.navlinks li {
+  list-style: none;
+}
+.dicetorylinks {
+  display: flex;
+  gap: 4rem;
+}
+.dicetorylinks a {
+  text-decoration: none;
+  color: white;
+}
