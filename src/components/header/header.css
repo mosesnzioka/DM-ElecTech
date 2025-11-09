@@ -15,3 +15,8 @@
   text-decoration: none;
   color: white;
 }
+
+.dicetorylinks a:hover{
+  color: brown;
+  transition: color 0.3s ease-in-out;
+}

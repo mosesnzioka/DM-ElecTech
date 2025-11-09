@@ -1,59 +1,25 @@
 import "./hero.css";
 import Header from "../header/header";
+import SignIn from "../signIn/signIn";
+import { Link } from "react-router-dom"
 function Hero() {
   return (
     <div className="HeroSection">
       <Header />
       <div className="heroContent">
-        <div>discription</div>
-        <div className="wrapper">
-          <form className="the-form">
-            <div>
-              <h1>Sign In</h1>
-            </div>
-
-            <div class="signIn-info">
-              <div class="input-box">
-                <div class="input-field">
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email@gmail.com"
-                    required
-                  />
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
-
-                <div class="input-field">
-                  <input
-                    type="password"
-                    name="password"
-                    placeholder="Pass@world"
-                    required
-                  />
-                  <i class="fa fa-lock" aria-hidden="true"></i>
-                </div>
-              </div>
-
-              <div class="remember-forgot">
-                <label>
-                  <input type="checkbox" /> Remeber Me?
-                </label>
-                <a href="#">Reset password</a>
-              </div>
-
-              <button type="submit" class="btn-submit">
-                Sign In
-              </button>
-
-              <div class="register-link">
-                <p>
-                  Don’t have an account? <a href="#">Register here</a>
-                </p>
-              </div>
-            </div>
-          </form>
+        <div className="dashbordData">
+            <ul className="dashbordLinks">
+              <li><Link to="/DashBord">dashbord</Link></li>
+              <li><Link to="/Contracts">cotracts</Link></li>
+              <li><Link to="/Engineers">Engineers</Link></li>
+              <li><Link to="/Projects">projects</Link></li>
+            </ul>
         </div>
+        <div className="data-analysis">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Voluptatum facilis veniam voluptatem omnis, vitae reprehenderit molestiae nostrum perferendis, tempora deserunt eum quam.
+           Eveniet earum magni neque reiciendis repudiandae animi pariatur!</div>
+        <SignIn/>
+
       </div>
     </div>
   );
